@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html>
+
+    <!--Début des caractéristiques de la page-->
+    
+    <head class="Head">
+        <title>Cabinet de podologie Le Rispal</title>
+        <meta charset="utf-8" />
+        <meta name="Titre" content="Cabinet-Rispal">
+        <meta name="Description" content="Renseignez-vous sur le Cabinet-Rispal">
+        <meta name="Mots clés" content="Cabinet, Cypcarz, podologie, posturologie">
+        <meta name="Auteur" content="Albane">
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/92636fc0e0.js" crossorigin="anonymous"></script>
+        <link rel="Page-accueil" href="page-accueil.html">
+        <link rel="Page-cabinet" href="page-cabinet.html">
+        <link rel="Page-equipe" href="page-equipe.html">
+        <link rel="Page-pédicurie" href="page-pédicurie.html">
+        <link rel="Page-podologie" href="page-podologie.html">
+        <link rel="Page-posturologie" href="page-posturologie.html">
+        <link rel="Page-enfants" href="page-enfants.html">
+        <link rel="Page-sport" href="page-sport.html">
+        <link rel="Page-etiosystem" href="page-etiosystem.html">
+        <link rel="stylesheet" href="Style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="./Images/Logo.jpg">
+    </head>
+    
+    <!--Fin des caractéristiques de la page-->
+
+    <body>
+
+        <!--Début de l'en-tête de la page-->
+        
+        <header class="header">
+            <div class="en-tete">
+                <div class="logo-coordonnees">
+                    <img class="logo-entete" src="./Images/Logo.png" alt="Chaussure-icon">
+                    <div class="nom-cabinet"><h1>Cabinet de pédicurie-podologie et de posturologie LE RISPAL</h1></div>
+                </div>
+                <div class="navigation">
+                    <button><a class="nav-accueil" href="page-accueil.html"><p>Accueil</p></a></button>
+                    <button><a class="nav-cabinet" href="page-cabinet.html"><p>Cabinet</p></a></button>
+                    <button><a class="nav-equipe" href="page-equipe.html"><p>Equipe</p></a></button>
+                    <button><a class="nav-pédicurie" href="page-pédicurie.html"><p>Pédicurie</p></a></button>
+                    <button><a class="nav-podologie" href="page-podologie.html"><p>Podologie</p></a></button>
+                    <button><a class="nav-posturologie" href="page-posturologie.html"><p>Posturologie</p></a></button>
+                    <button><a class="nav-enfants" href="page-enfants.html"><p>Enfants</p></a></button>
+                    <button><a class="nav-sport" href="page-sport.html"><p>Sport</p></a></button>
+                    <button><a class="nav-etiosystem" href="page-etiosystem.html"><p>Etiosystem</p></a></button>
+                </div>        
+            </div>
+        </header>
+
+        <!--Fin de la partie l'en-tête de la page-->
+
+        <!--Début du CV-->
+                
+        <div class="CV-fred">
+            <h1>CV de Frédéric CYPCARZ</h1>
+            <h2>Diplomes et formations</h2>
+            <button id="diplomes-button" onclick="DipAffMas()">Afficher plus</button>
+            <script>
+                function DipAffMas() {
+                    if (document.getElementById('diplomes').style.display == "none") 
+                    {document.getElementById('diplomes').style.display = "block";
+                    document.getElementById('diplomes-button').innerHTML = "Afficher moins";} 
+                    else
+                    {document.getElementById('diplomes').style.display = "none";
+                    document.getElementById('diplomes-button').innerHTML = "Afficher plus";}
+                }
+            </script>
+            <div id="diplomes" class="diplomes">
+                <div class="diplomes-date-recap">
+                    <div class="diplomes-date"><h3>1985</h3></div>
+                    <div class="diplomes-recap">
+                        <p>DE Pédicure podologue (Rennes)</p> 
+                        <p>Semelles proprioceptives BOURDIOL</p> 
+                    </div>
+                </div>
+                <div class="diplomes-date-recap">
+                    <div class="diplomes-date"><h3>2012</h3></div>
+                    <div class="diplomes-recap">
+                        <p>Posturologie clinique CINETIC SANTE</p>
+                    </div>
+                </div>
+                <div class="diplomes-date-recap">
+                    <div class="diplomes-date"><h3>2013</h3></div>
+                    <div class="diplomes-recap">
+                        <p>DU Réharmonisation posturale en podologie</p> 
+                        <p>Formation AM CUBE sur plateforme</p>  
+                    </div>
+                </div>
+                <div class="diplomes-date-recap">
+                    <div class="diplomes-date"><h3>2014</h3></div>
+                    <div class="diplomes-recap">
+                        <p>Master 1 bio mecanique ergonomie recherche clinique ( major de promotion) </p> 
+                        <p>Podologie de l’enfant</p> 
+                    </div>
+                </div>
+                <div class="diplomes-date-recap">
+                    <div class="diplomes-date"><h3>2015</h3></div>
+                    <div class="diplomes-recap">
+                        <p>Posturologie clinique de l’enfant  et de l’adolescent </p> 
+                        <p>Du video dartfish pour le sport de haut niveau </p>
+                        <p>Reharmonisation posturale du cycliste</p>  
+                    </div>
+                </div>
+                <div class="diplomes-date-recap">
+                    <div class="diplomes-date"><h3>2016</h3></div>
+                    <div class="diplomes-recap">
+                        <p>Diplôme de chaine gds</p> 
+                    </div>
+                </div>
+                <div class="diplomes-date-recap">
+                    <div class="diplomes-date"><h3>2016-2017</h3></div>
+                    <div class="diplomes-recap">
+                        <p>Expert en  plateforme de podologie : marc janin </p>  
+                    </div>
+                </div>
+                <div class="diplomes-date-recap">
+                    <div class="diplomes-date"><h3>2017</h3></div>
+                    <div class="diplomes-recap">
+                        <p>Diplôme optimisation gds</p> 
+                    </div>
+                </div>
+                <div class="diplomes-date-recap">
+                    <div class="diplomes-date"><h3>2017-2018</h3></div>
+                    <div class="diplomes-recap">
+                        <p>Du pata (perception action troubles des apprentissages)</p>  
+                    </div>
+                </div>
+                <div class="diplomes-date-recap">
+                    <div class="diplomes-date"><h3>2018</h3></div>
+                    <div class="diplomes-recap">
+                        <p>Diplôme scoliose gds</p>  
+                    </div>
+                </div>
+                <div class="diplomes-date-recap">
+                    <div class="diplomes-date"><h3>2019</h3></div>
+                    <div class="diplomes-recap">
+                        <p>Reflexes archaiques (rmti niveau 1 (focus,organisation,comprehension)</p> 
+                        <p>Reflexes archaiques (rmti niveau 2 (emotions,memory,benaviour)</p>
+                        <p>Reflexes archaiques (rmti niveau 3 (lecture et ecriture)</p> 
+                        <p>Podometrie appliquee aux chaines gds</p>
+                        <p>Preferences motrices (raphl hypollyte) formation complete</p> 
+                        <p>Formations posturologie rflexexe primordiale (niv 1 et 2)</p>  
+                    </div>
+                </div>
+                <div class="diplomes-date-recap">
+                    <div class="diplomes-date"><h3>2020</h3></div>
+                    <div class="diplomes-recap">
+                        <p>ORTHESES PPCR ®BREVET MARQUE DEPOSE A L’INP : (INSTITUT NATIONALE DES PROTOCOLES ET MARQUE DEPOSEE  en 2020 : PPCR  ® ( POSTUROLOGIE PERCEPTIVE COGNITIVE REFLEXE)</p> 
+                    </div>
+                </div>
+                <div class="diplomes-date-recap">
+                    <div class="diplomes-date"><h3>2021</h3></div>
+                    <div class="diplomes-recap">
+                        <p>Therapie manuelle niv 1</p> 
+                        <p>En cours: reharmonisation posturale du golfeur</p>
+                    </div>                   
+                </div>
+                <button id="diplomes-button" onclick="DipAffMas()">Afficher moins</button>
+            </div>
+            
+            <h2>Formateur en posturologie et troubles des apprentissages</h2>
+            <button id="formateur-button" onclick="FormAffMas()">Afficher plus</button>
+            <script>
+                function FormAffMas() {
+                    if (document.getElementById('formateur').style.display == "none") 
+                    {document.getElementById('formateur').style.display = "block";
+                    document.getElementById('formateur-button').innerHTML = "Afficher moins";} 
+                    else
+                    {document.getElementById('formateur').style.display = "none";
+                    document.getElementById('formateur-button').innerHTML = "Afficher plus";}
+                }
+            </script>
+            <div id="formateur" class="formateur">
+                <div class="formateur-date-recap">
+                    <div class="formateur-date"><h3>2016-2018</h3></div>
+                    <div class="formateur-recap">
+                        <p>Ex professeur de Posturologie Clinique d’Ostéopathie (IFMK de Vichy)</p> 
+                    </div>
+                </div>
+                <div class="formateur-date-recap">
+                    <div class="formateur-date"><h3>2017-2019</h3></div>
+                    <div class="formateur-recap">
+                        <p>Formateur de Posturologie chez Cinétic Santé</p> 
+                    </div>
+                </div>
+                <div class="formateur-date-recap">
+                    <div class="formateur-date"><h3>2019</h3></div>
+                    <div class="formateur-recap">
+                        <p>Formateur sur les Troubles des Apprentissages (Samper Formation)</p> 
+                    </div>
+                </div>
+                <div class="formateur-date-recap">
+                    <div class="formateur-date"><h3>2019-2020</h3></div>
+                    <div class="formateur-recap">
+                        <p>Formateur sur les Troubles des Apprentissages (Vitae  Formation)</p> 
+                    </div>
+                </div>
+                <button id="formateur-button" onclick="FormAffMas()">Afficher moins</button>
+            </div>
+
+            <h2>Recherches cliniques</h2>
+            <button id="recherches-cliniques-button" onclick="RechAffMas()">Afficher plus</button>
+            <script>
+                function RechAffMas() {
+                    if (document.getElementById('recherches-cliniques').style.display == "none") 
+                    {document.getElementById('recherches-cliniques').style.display = "block";
+                    document.getElementById('recherches-cliniques-button').innerHTML = "Afficher moins";} 
+                    else
+                    {document.getElementById('recherches-cliniques').style.display = "none";
+                    document.getElementById('recherches-cliniques-button').innerHTML = "Afficher plus";}
+                }
+            </script>
+            <div id="recherches-cliniques" class="recherches-cliniques">
+                <div class="recherches-cliniques-date-recap">
+                    <div class="recherches-cliniques-date"><h3>XXXX</h3></div>
+                    <div class="recherches-cliniques-recap">
+                        <p>Différence des pressions et surfaces plantaires / aux class dentaires 1 2 3 en Prognathie forcée ou non</p> 
+                    </div>
+                </div>
+                <div class="recherches-cliniques-date-recap">
+                    <div class="recherches-cliniques-date"><h3>2015</h3></div>
+                    <div class="recherches-cliniques-recap">
+                        <p>Directeur de mémoire du Doctorat d’Orthodontiste de Floriane Le Noan sur «Etude de l’influence de la position mandibulaire sagittale sur la posture à l’aide d’une plateforme de force(baropodométrie)» <strong>(Université Clermont-Ferrand)</strong></p> 
+                    </div>
+                </div>
+                <div class="recherches-cliniques-date-recap">
+                    <div class="recherches-cliniques-date"><h3>2018</h3></div>
+                    <div class="recherches-cliniques-recap">
+                        <p>Influences différentielles de 4 stimulations antérieures de type « barres antérieures » en position debout / assise sur la fonction d’équilibration chez des sujets dyslexiques et non dyslexiques <strong>(DU PATA)</strong></p> 
+                    </div>
+                </div>
+                <button id="recherches-cliniques-button" onclick="RechAffMas()">Afficher moins</button>
+            </div>
+        </div>
+
+        <!--Fin du CV-->
+
+        <!--Début du pied de page-->
+
+        <footer class="footer">
+            <div class="pied-page">
+                <h2>À propos</h2>
+                <div class="pied-selection">
+                    <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2743.3902880241862!2d3.3323937147724076!3d46.55974677912915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f11c39533c7075%3A0x87dc481328108f98!2s15%20Rue%20Charles%20Rispal%2C%2003000%20Moulins!5e0!3m2!1sfr!2sfr!4v1632131362571!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="pied-coordonnées">
+                        <p>15 Rue Charles Rispal 03000 Moulins</p> 
+                        <p>Tel. 04 70 35 09 40</p>
+                        <p><strong>Mentions légales</strong></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--Fin du pied de page-->
+
+    </body>
+
+</html>
