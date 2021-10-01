@@ -1,0 +1,494 @@
+/* reset all default style */
+
+:root{
+    --black:black;
+    --white:white;
+    --blue:#0065FC;
+    --lightblue:#DEEBFF;
+}
+
+.html,body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: Raleway;
+    margin: 40px;
+    overflow-x: hidden;
+}
+
+
+
+/* Début : En-tête */
+
+.header{
+    width: 100% !important;
+}
+
+.en-tete{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.logo-coordonnees{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+    height: 125px;
+}
+
+.logo-entete{
+    width: auto;
+    height: 90%;
+    object-fit: cover;
+}
+
+.nom-cabinet{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color:lightgray;
+    border-radius: 20px;
+    max-height: 40px;
+    align-items: center;
+} 
+
+.navigation button{
+    background-color:transparent;
+    border-color: transparent;
+}
+
+.navigation a{
+    color: black;
+    text-decoration: none;
+}
+
+/* Fin : En-tête */
+
+/* Début : Accueil */
+
+.sommaire{
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    border:1px solid lightgrey;
+    background-color:lightgrey;
+}
+
+.sommaire-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.sommaire-item{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    color: white;
+    z-index: 0;
+    flex: 25%;
+    block-size: 45%;
+    border-radius: 20px;
+    margin: 10px;
+    background-size: cover;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.452);
+}
+
+.sommaire-item:hover{
+    transform: scale(105%);
+}
+
+.sommaire-photo{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    object-fit: cover;
+}
+
+.sommaire-item:hover .sommaire-photo{
+    opacity: 50%;
+}
+
+.sommaire-text{
+    width: 100%;
+    height: 100%;
+}
+
+.sommaire-text h2{
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 90%;
+    margin: 0;
+    color:black;
+    font-weight: bold;
+    top: 30px;
+    left: 20px;
+}
+
+.sommaire-text p{
+    position: relative;
+    z-index: 1;
+    height: auto;
+    width: 80%;
+    margin: 0px;
+    color:black;
+    font-weight: bold;
+    top: 80px;
+    left: -350px;
+    transition: all .3s;
+    text-decoration: none;
+}
+
+.sommaire-item:hover p{
+    left: 20px;
+}
+
+.sommaire-text a, a:hover, a:active, a:visited{
+    text-decoration: none;
+
+}
+
+/* Fin : Accueil */
+
+/* Début : Equipe */
+
+.CV-fred{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#diplomes-button, #diplomes-button:hover, #diplomes-button:active, #diplomes-button:visited{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    line-height: 30px;
+    font-size: 100%;
+    width: 15%;
+    margin-left: 5%;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor:pointer;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.diplomes{
+    display: none;
+    flex-direction: column;
+    width:100%;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.diplomes-date-recap{
+    display: flex;
+    margin: 5px;
+    border-radius: 20px;
+    border:1px solid lightgrey;
+}
+
+.diplomes-date{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: lightgrey;
+}
+
+.diplomes-recap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.diplomes-recap p{
+    width: 30%;
+    text-align: center;
+}
+
+#formateur-button, #formateur-button:hover, #formateur-button:active, #formateur-button:visited{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    line-height: 30px;
+    font-size: 100%;
+    width: 15%;
+    margin-left: 5%;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor:pointer;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.formateur{
+    display: none;
+    flex-direction: column;
+    width:100%;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.formateur-date-recap{
+    display: flex;
+    margin: 5px;
+    border-radius: 20px;
+    border:1px solid lightgrey;
+}
+
+.formateur-date{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: lightgrey;
+}
+
+.formateur-recap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.formateur-recap p{
+    width: 30%;
+    text-align: center;
+}
+
+#recherches-cliniques-button, #recherches-cliniques-button:hover, #recherches-cliniques-button:active, #recherches-cliniques-button:visited{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    line-height: 30px;
+    font-size: 100%;
+    width: 15%;
+    margin-left: 5%;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor:pointer;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.recherches-cliniques{
+    display: none;
+    flex-direction: column;
+    width:100%;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.recherches-cliniques-date-recap{
+    display: flex;
+    margin: 5px;
+    border-radius: 20px;
+    border:1px solid lightgrey;
+}
+
+.recherches-cliniques-date{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: lightgrey;
+}
+
+.recherches-cliniques-recap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.recherches-cliniques-recap p{
+    width: 30%;
+    text-align: center;
+}
+
+/*CABINET*/
+
+.cabinet-photos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    margin:auto;
+    border-radius: 20px;
+    border:1px solid lightgrey;
+    background-color:lightgrey;
+}
+
+.cabinet-photo{
+    width: 31%;
+    border-radius: 20px;
+    margin: 10px;
+    background-size: cover;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.452);
+}
+
+.cabinet-photo:hover{
+    transform: scale(105%);
+}
+
+/* Fin : Cabinet */
+
+/* Début : Pédicure */
+/* Fin : Pédicure */
+
+/* Début : Podologue */
+/* Fin : Podologue */
+
+/* Début : Posturologue */
+/* Fin : Posturologue */
+
+/* Début : Enfants */
+/* Fin : Enfants */
+
+/* Début : Sport*/
+/* Fin : Sport*/
+
+/* Début : Etiosystem */
+
+.presentation-etiosystem{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.etiosystem-photo{
+    width: auto;
+    align-self: center;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.452);
+    border-radius: 20px;
+    margin: 10px;
+    height: 300px;
+}
+
+.etiosystem-legende{
+    align-self: center;
+}
+
+.etiosystem-text{
+    text-align: justify;
+    text-justify: auto;
+}
+
+.etiosystem-video{
+    align-self: center;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.452);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+/* Fin : Etiosystem */
+
+/* Début : Pied-page */
+
+.footer{
+    width: 100% !important;
+}
+
+.pied-page{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
+    border:1px solid lightgrey;
+    background-color:lightgrey;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.pied-page h2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.pied-selection{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    flex: 2;
+}
+
+.pied-selection p:hover{
+    background-color:transparent;
+    border-color: transparent;
+}
+
+.google-map{
+    height: auto;
+    width: 50%;
+    box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.452);
+    border-radius: 20px;
+    margin-left:10px;
+    margin-bottom: 10px;
+}
+
+.pied-coordonnées{
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 120%;
+}
+
+/* Fin : Pied-page */
