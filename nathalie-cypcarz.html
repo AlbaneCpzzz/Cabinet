@@ -76,6 +76,79 @@
 
         <!--Fin de la partie l'en-tête de la page-->
 
+        <!--Début du CV-->
+                
+        <div class="CV-nath">
+            <h1>CV de Nathalie CYPCARZ</h1>
+            <h2>Diplomes et formations</h2>
+            <button id="diplomes-button" onclick="DipAffMas()">Afficher plus</button>
+            <script>
+                function DipAffMas() {
+                    if (document.getElementById('diplomes').style.display == "none") 
+                    {document.getElementById('diplomes').style.display = "block";
+                    document.getElementById('diplomes-button').innerHTML = "Afficher moins";} 
+                    else
+                    {document.getElementById('diplomes').style.display = "none";
+                    document.getElementById('diplomes-button').innerHTML = "Afficher plus";}
+                }
+            </script>
+            <div id="diplomes" class="diplomes">
+                <div class="diplomes-date-recap">
+                    <div class="diplomes-date"><h3>XXXX</h3></div>
+                    <div class="diplomes-recap">
+                        <p>XXXX</p> 
+                    </div>                   
+                </div>
+                <button id="diplomes-button" onclick="DipAffMas()">Afficher moins</button>
+            </div>
+            
+            <h2>Formateur en posturologie et troubles des apprentissages</h2>
+            <button id="formateur-button" onclick="FormAffMas()">Afficher plus</button>
+            <script>
+                function FormAffMas() {
+                    if (document.getElementById('formateur').style.display == "none") 
+                    {document.getElementById('formateur').style.display = "block";
+                    document.getElementById('formateur-button').innerHTML = "Afficher moins";} 
+                    else
+                    {document.getElementById('formateur').style.display = "none";
+                    document.getElementById('formateur-button').innerHTML = "Afficher plus";}
+                }
+            </script>
+            <div id="formateur" class="formateur">
+                <div class="formateur-date-recap">
+                    <div class="formateur-date"><h3>XXXX</h3></div>
+                    <div class="formateur-recap">
+                        <p>XXXX</p> 
+                    </div>
+                </div>
+                <button id="formateur-button" onclick="FormAffMas()">Afficher moins</button>
+            </div>
+
+            <h2>Recherches cliniques</h2>
+            <button id="recherches-cliniques-button" onclick="RechAffMas()">Afficher plus</button>
+            <script>
+                function RechAffMas() {
+                    if (document.getElementById('recherches-cliniques').style.display == "none") 
+                    {document.getElementById('recherches-cliniques').style.display = "block";
+                    document.getElementById('recherches-cliniques-button').innerHTML = "Afficher moins";} 
+                    else
+                    {document.getElementById('recherches-cliniques').style.display = "none";
+                    document.getElementById('recherches-cliniques-button').innerHTML = "Afficher plus";}
+                }
+            </script>
+            <div id="recherches-cliniques" class="recherches-cliniques">
+                <div class="recherches-cliniques-date-recap">
+                    <div class="recherches-cliniques-date"><h3>XXXX</h3></div>
+                    <div class="recherches-cliniques-recap">
+                        <p>XXXX</p> 
+                    </div>
+                </div>
+                <button id="recherches-cliniques-button" onclick="RechAffMas()">Afficher moins</button>
+            </div>
+        </div>
+
+        <!--Fin du CV-->
+
         <!--Début du pied de page-->
 
         <footer class="footer">
