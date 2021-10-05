@@ -1,24 +1,21 @@
 /* reset all default style */
 
 :root{
-    --black:black;
-    --white:white;
-    --blue:#0065FC;
-    --lightblue:#DEEBFF;
+    --bleu:rgb(159, 226, 243);
 }
 
-.html,body{
+.html, body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     font-family: Raleway;
-    margin: 40px;
     overflow-x: hidden;
+    margin: 30px;
 }
 
 
 
-/* Début : En-tête */
+/* En-tête */
 
 .header{
     width: 100% !important;
@@ -37,11 +34,12 @@
     justify-content:space-between;
     width: 100%;
     height: 125px;
+    margin-bottom: 20px;
 }
 
 .logo-entete{
     width: auto;
-    height: 90%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -55,136 +53,72 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 100%;
-    background-color:lightgray;
-    border-radius: 20px;
-    max-height: 40px;
     align-items: center;
-} 
+    width: 100%;
+    max-height: 50px;
+    padding: 0;
+    margin: 0;
+    border-radius: 30px;
+    background-color: var(--bleu);
+}
 
 .navigation li{
-    background-color:transparent;
-    border-color: transparent;
     list-style-type: none;
 }
 
-.navigation a{
-    color: black;
+.navigation li a{
     text-decoration: none;
+    color: black;
 }
 
-.menu-equipe{
-    padding:0;
-    margin:0;
-    list-style:none;
-    text-align:center;
-    position:absolute;
+.navigation li:hover a{
+    font-weight: bold;
+}
+
+.nav-sous{
+    display: none;
+    position: absolute;
+    left: -999em;
+    text-align: left;
     z-index: 1000;
-    max-height:0;
-    left: 0;
-    right: 0;
-    overflow:hidden;
-    -moz-transition: .8s all .3s;
-    -webkit-transition: .8s all .3s;
-    transition: .8s all .3s;
 }
 
-.nav-menu-equipe{
-    display:inline-block;
-    position:relative;
-    border-radius:8px 8px 0 0;
-    display:inherit;
-    border-radius:0;
+.nav-deroulant:hover .nav-sous{
+    display: inline-block;
+    left: auto;
+    padding: 0;
+    font-weight: bolder;
+    font-size: 90%;
+    background-color:var(--bleu);
+    border: 3px solid var(--bleu);
+    border-radius: 0px 0px 30px 30px;
+    width: 13%;
+    padding-left: 20px;
 }
 
-.nav-menu-equipe:hover{
-    border-radius:0;
+.nav-deroulant .nav-sous li{
+    list-style-type: none;
 }
 
-.nav-menu-equipe:last-child{
-    border-radius:0 0 8px 8px;
+.nav-deroulant .nav-sous li a{
+    text-decoration: none;
+    color: black;
 }
 
-
-.menu-enfants{
-    padding:0;
-    margin:0;
-    list-style:none;
-    text-align:center;
-    position:absolute;
-    z-index: 1000;
-    max-height:0;
-    left: 0;
-    right: 0;
-    overflow:hidden;
-    -moz-transition: .8s all .3s;
-    -webkit-transition: .8s all .3s;
-    transition: .8s all .3s;
-}
-
-.nav-menu-enfants{
-    display:inline-block;
-    position:relative;
-    border-radius:8px 8px 0 0;
-    display:inherit;
-    border-radius:0;
-}
-
-.nav-menu-enfants:hover{
-    border-radius:0;
-}
-
-.nav-menu-enfants:last-child{
-    border-radius:0 0 8px 8px;
-}
-
-.menu-sport{
-    padding:0;
-    margin:0;
-    list-style:none;
-    text-align:center;
-    position:absolute;
-    z-index: 1000;
-    max-height:0;
-    left: 0;
-    right: 0;
-    overflow:hidden;
-    -moz-transition: .8s all .3s;
-    -webkit-transition: .8s all .3s;
-    transition: .8s all .3s;
-}
-
-.nav-menu-sport{
-    display:inline-block;
-    position:relative;
-    border-radius:8px 8px 0 0;
-    display:inherit;
-    border-radius:0;
-}
-
-.nav-menu-sport:hover{
-    border-radius:0;
-}
-
-.nav-menu-sport:last-child{
-    border-radius:0 0 8px 8px;
-}
-
-
-/* Fin : En-tête */
-
-/* Début : Accueil */
+/* Accueil */
 
 .sommaire{
     display: flex;
     flex-direction: column;
-    height: 900px;
-    width: 100%;
+    height: 800px;
     margin-top: 30px;
     margin-bottom: 30px;
-    border-radius: 20px;
-    border:1px solid lightgrey;
-    background-color:lightgrey;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 30px;
+    border:3px solid var(--bleu);
+    padding: 20px;
+    width: -webkit-fill-available;
 }
 
 .sommaire-block{
@@ -201,19 +135,19 @@
     position: relative;
     cursor: pointer;
     overflow: hidden;
-    color: white;
     z-index: 0;
     flex: 25%;
     block-size: 45%;
-    border-radius: 20px;
+    border-radius: 30px;
     margin: 10px;
+    border: 1px solid lightgrey;
     background-size: cover;
     background-color: white;
     box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.452);
 }
 
 .sommaire-item:hover{
-    transform: scale(105%);
+    transform: scale(1.02);
 }
 
 .sommaire-photo{
@@ -267,18 +201,63 @@
 
 .sommaire-text a, a:hover, a:active, a:visited{
     text-decoration: none;
-
 }
 
-/* Fin : Accueil */
+/* Cabinet */
 
-/* Début : Equipe */
-
-.CV-fred{
-    width: 100%;
-    height: auto;
+.presentation-cabinet{
     display: flex;
     flex-direction: column;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 30px;
+    border:3px solid var(--bleu);
+    padding: 20px;
+    width: -webkit-fill-available;
+}
+
+.cabinet-photos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 30px;
+    justify-content: space-around;
+}
+
+.cabinet-photo{
+    width: 31%;
+    border-radius: 30px;
+    margin: 10px;
+    background-size: cover;
+    background-color: white;
+    border: 1px solid lightgrey;
+    box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.452);
+}
+
+.cabinet-photo:hover{
+    transform: scale(105%);
+}
+
+/* Equipe */
+
+/* Fred */
+
+.CV-fred{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 30px;
+    border:3px solid var(--bleu);
+    padding: 20px;
+    width: -webkit-fill-available;
 }
 
 #diplomes-button, #diplomes-button:hover, #diplomes-button:active, #diplomes-button:visited{
@@ -291,8 +270,8 @@
     width: 15%;
     margin-left: 5%;
     background-color: transparent;
-    border: 2px solid black;
-    border-radius: 20px;
+    border: 2px solid var(--bleu);
+    border-radius: 30px;
     cursor:pointer;
     text-decoration: none;
     margin-top: 20px;
@@ -311,8 +290,8 @@
 .diplomes-date-recap{
     display: flex;
     margin: 5px;
-    border-radius: 20px;
-    border:1px solid lightgrey;
+    border-radius: 30px;
+    border:1px solid var(--bleu);
 }
 
 .diplomes-date{
@@ -321,8 +300,8 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    border-radius: 20px;
-    background-color: lightgrey;
+    border-radius: 30px;
+    background-color: var(--bleu);
 }
 
 .diplomes-recap{
@@ -348,8 +327,8 @@
     width: 15%;
     margin-left: 5%;
     background-color: transparent;
-    border: 2px solid black;
-    border-radius: 20px;
+    border: 2px solid var(--bleu);
+    border-radius: 30px;
     cursor:pointer;
     text-decoration: none;
     margin-top: 20px;
@@ -368,8 +347,8 @@
 .formateur-date-recap{
     display: flex;
     margin: 5px;
-    border-radius: 20px;
-    border:1px solid lightgrey;
+    border-radius: 30px;
+    border:1px solid var(--bleu);
 }
 
 .formateur-date{
@@ -378,8 +357,8 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    border-radius: 20px;
-    background-color: lightgrey;
+    border-radius: 30px;
+    background-color: var(--bleu);
 }
 
 .formateur-recap{
@@ -405,8 +384,8 @@
     width: 15%;
     margin-left: 5%;
     background-color: transparent;
-    border: 2px solid black;
-    border-radius: 20px;
+    border: 2px solid var(--bleu);
+    border-radius: 30px;
     cursor:pointer;
     text-decoration: none;
     margin-top: 20px;
@@ -425,8 +404,8 @@
 .recherches-cliniques-date-recap{
     display: flex;
     margin: 5px;
-    border-radius: 20px;
-    border:1px solid lightgrey;
+    border-radius: 30px;
+    border:1px solid var(--bleu);
 }
 
 .recherches-cliniques-date{
@@ -435,8 +414,8 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    border-radius: 20px;
-    background-color: lightgrey;
+    border-radius: 30px;
+    background-color: var(--bleu);
 }
 
 .recherches-cliniques-recap{
@@ -452,26 +431,48 @@
     text-align: center;
 }
 
-/*CABINET*/
+/* Pédicure */
+
+/* Podologue */
+
+/* Posturologue */
+
+/* Enfants */
+
+/* Sport*/
+
+/* Cabinet */
+
+.presentation-cabinet{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 30px;
+    border:3px solid var(--bleu);
+    padding: 20px;
+    width: -webkit-fill-available;
+}
 
 .cabinet-photos{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
-    width: 90%;
-    margin:auto;
-    border-radius: 20px;
-    border:1px solid lightgrey;
-    background-color:lightgrey;
+    border-radius: 30px;
+    justify-content: space-around;
 }
 
 .cabinet-photo{
     width: 31%;
-    border-radius: 20px;
+    border-radius: 30px;
     margin: 10px;
     background-size: cover;
     background-color: white;
+    border: 1px solid lightgrey;
     box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.452);
 }
 
@@ -479,37 +480,29 @@
     transform: scale(105%);
 }
 
-/* Fin : Cabinet */
-
-/* Début : Pédicure */
-/* Fin : Pédicure */
-
-/* Début : Podologue */
-/* Fin : Podologue */
-
-/* Début : Posturologue */
-/* Fin : Posturologue */
-
-/* Début : Enfants */
-/* Fin : Enfants */
-
-/* Début : Sport*/
-/* Fin : Sport*/
-
-/* Début : Etiosystem */
+/* Etiosystem */
 
 .presentation-etiosystem{
     display: flex;
     flex-direction: column;
     height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 30px;
+    border:3px solid var(--bleu);
+    padding: 20px;
+    width: -webkit-fill-available;
 }
 
 .etiosystem-photo{
     width: auto;
     align-self: center;
     background-color: white;
+    border: 1px solid lightgrey;
     box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.452);
-    border-radius: 20px;
+    border-radius: 30px;
     margin: 10px;
     height: 300px;
 }
@@ -527,7 +520,7 @@
     align-self: center;
     background-color: white;
     box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.452);
-    border-radius: 20px;
+    border-radius: 30px;
     margin: 10px;
 }
 
@@ -546,11 +539,10 @@
     flex-direction: column;
     height: 300px;
     width: 100%;
-    border:1px solid lightgrey;
-    background-color:lightgrey;
+    background-color:var(--bleu);
     margin-top: 20px;
     margin-bottom: 20px;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .pied-page h2{
@@ -576,11 +568,10 @@
 
 .google-map{
     height: auto;
-    width: 50%;
+    width: 70%;
     box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.452);
-    border-radius: 20px;
-    margin-left:10px;
-    margin-bottom: 10px;
+    border-radius: 30px;
+    margin: 20px;
 }
 
 .pied-coordonnées{
