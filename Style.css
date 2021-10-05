@@ -1020,3 +1020,1018 @@
     margin-left: 40px;
     font-size: 120%;
 }
+
+/* Mobile */
+
+@media screen and (max-width: 600px){
+    
+    .html, body{
+        width: 100%;
+        overflow-x: hidden;
+        margin: 30px;
+        font-size: 70%;
+    }
+
+
+
+}
+
+
+
+
+
+/* En-tête */
+
+
+.logo-coordonnees{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.logo-entete{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nom-cabinet{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-height: 50px;
+    padding: 0;
+    margin: 0;
+    border-radius: 30px;
+    background-color: var(--bleu);
+}
+
+.navigation li{
+    list-style-type: none;
+}
+
+.navigation li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navigation li:hover a{
+    font-weight: bold;
+}
+
+.nav-sous{
+    display: none;
+    position: absolute;
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+}
+
+.nav-deroulant:hover .nav-sous{
+    display: inline-block;
+    left: auto;
+    padding: 0;
+    font-weight: bolder;
+    font-size: 90%;
+    background-color:var(--bleu);
+    border: 3px solid var(--bleu);
+    border-radius: 0px 0px 30px 30px;
+    width: 13%;
+    padding-left: 20px;
+}
+
+.nav-deroulant .nav-sous li{
+    list-style-type: none;
+}
+
+.nav-deroulant .nav-sous li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Accueil */
+
+.sommaire{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 30px;
+    border:3px solid var(--bleu);
+    padding: 20px;
+    width: -webkit-fill-available;
+}
+
+.sommaire-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.sommaire-item{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 0;
+    flex: 25%;
+    block-size: 45%;
+    border-radius: 30px;
+    margin: 10px;
+    border: 1px solid lightgrey;
+    background-size: cover;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.452);
+}
+
+.sommaire-item:hover{
+    transform: scale(1.02);
+}
+
+.sommaire-photo{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    object-fit: cover;
+}
+
+.sommaire-item:hover .sommaire-photo{
+    opacity: 50%;
+}
+
+.sommaire-text{
+    width: 100%;
+    height: 100%;
+}
+
+.sommaire-text h2{
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 90%;
+    margin: 0;
+    color:black;
+    font-weight: bold;
+    top: 30px;
+    left: 20px;
+}
+
+.sommaire-text p{
+    position: relative;
+    z-index: 1;
+    height: auto;
+    width: 80%;
+    margin: 0px;
+    color:black;
+    font-weight: bold;
+    top: 80px;
+    left: -350px;
+    transition: all .3s;
+    text-decoration: none;
+}
+
+.sommaire-item:hover p{
+    left: 20px;
+}
+
+.sommaire-text a, a:hover, a:active, a:visited{
+    text-decoration: none;
+}
+
+/* Cabinet */
+
+.presentation-cabinet{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 30px;
+    border:3px solid var(--bleu);
+    padding: 20px;
+    width: -webkit-fill-available;
+}
+
+.cabinet-photos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 30px;
+    justify-content: space-around;
+}
+
+.cabinet-photo{
+    width: 31%;
+    border-radius: 30px;
+    margin: 10px;
+    background-size: cover;
+    background-color: white;
+    border: 1px solid lightgrey;
+    box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.452);
+}
+
+.cabinet-photo:hover{
+    transform: scale(105%);
+}
+
+/* Equipe */
+
+.presentation-equipe{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 30px;
+    border:3px solid var(--bleu);
+    padding: 20px;
+    width: -webkit-fill-available;
+}
+
+.equipe-block{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: -webkit-fill-available;
+}
+
+.equipe-item{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 0;
+    width: 30%;
+    block-size: 90%;
+    border-radius: 30px;
+    margin: 10px;
+    border: 1px solid lightgrey;
+    background-size: cover;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.452);
+}
+
+.equipe-item:hover{
+    transform: scale(1.02);
+}
+
+.equipe-photo{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    object-fit: cover;
+}
+
+.equipe-item:hover .equipe-photo{
+    opacity: 50%;
+}
+
+.equipe-text{
+    width: 100%;
+    height: 100%;
+}
+
+.equipe-text h2{
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 90%;
+    margin: 0;
+    color:black;
+    font-weight: bold;
+    top: 30px;
+    left: 20px;
+}
+
+.equipe-text p{
+    position: relative;
+    z-index: 1;
+    height: auto;
+    width: 80%;
+    margin: 0px;
+    color:black;
+    font-weight: bold;
+    top: 80px;
+    left: -350px;
+    transition: all .3s;
+    text-decoration: none;
+}
+
+.equipe-item:hover p{
+    left: 20px;
+}
+
+.equipe-text a, a:hover, a:active, a:visited{
+    text-decoration: none;
+}
+
+/* Fred */
+
+.CV-fred{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 30px;
+    border:3px solid var(--bleu);
+    padding: 20px;
+    width: -webkit-fill-available;
+}
+
+#diplomes-button, #diplomes-button:hover, #diplomes-button:active, #diplomes-button:visited{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    line-height: 30px;
+    font-size: 100%;
+    width: 15%;
+    margin-left: 5%;
+    background-color: transparent;
+    border: 2px solid var(--bleu);
+    border-radius: 30px;
+    cursor:pointer;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.diplomes{
+    display: none;
+    flex-direction: column;
+    width:100%;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.diplomes-date-recap{
+    display: flex;
+    margin: 5px;
+    border-radius: 30px;
+    border:1px solid var(--bleu);
+}
+
+.diplomes-date{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: var(--bleu);
+}
+
+.diplomes-recap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.diplomes-recap p{
+    width: 30%;
+    text-align: center;
+}
+
+#formateur-button, #formateur-button:hover, #formateur-button:active, #formateur-button:visited{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    line-height: 30px;
+    font-size: 100%;
+    width: 15%;
+    margin-left: 5%;
+    background-color: transparent;
+    border: 2px solid var(--bleu);
+    border-radius: 30px;
+    cursor:pointer;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.formateur{
+    display: none;
+    flex-direction: column;
+    width:100%;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.formateur-date-recap{
+    display: flex;
+    margin: 5px;
+    border-radius: 30px;
+    border:1px solid var(--bleu);
+}
+
+.formateur-date{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: var(--bleu);
+}
+
+.formateur-recap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.formateur-recap p{
+    width: 30%;
+    text-align: center;
+}
+
+#recherches-cliniques-button, #recherches-cliniques-button:hover, #recherches-cliniques-button:active, #recherches-cliniques-button:visited{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    line-height: 30px;
+    font-size: 100%;
+    width: 15%;
+    margin-left: 5%;
+    background-color: transparent;
+    border: 2px solid var(--bleu);
+    border-radius: 30px;
+    cursor:pointer;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.recherches-cliniques{
+    display: none;
+    flex-direction: column;
+    width:100%;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.recherches-cliniques-date-recap{
+    display: flex;
+    margin: 5px;
+    border-radius: 30px;
+    border:1px solid var(--bleu);
+}
+
+.recherches-cliniques-date{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: var(--bleu);
+}
+
+.recherches-cliniques-recap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.recherches-cliniques-recap p{
+    width: 30%;
+    text-align: center;
+}
+
+/* Fred */
+
+.CV-nath{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 30px;
+    border:3px solid var(--bleu);
+    padding: 20px;
+    width: -webkit-fill-available;
+}
+
+#diplomes-button, #diplomes-button:hover, #diplomes-button:active, #diplomes-button:visited{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    line-height: 30px;
+    font-size: 100%;
+    width: 15%;
+    margin-left: 5%;
+    background-color: transparent;
+    border: 2px solid var(--bleu);
+    border-radius: 30px;
+    cursor:pointer;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.diplomes{
+    display: none;
+    flex-direction: column;
+    width:100%;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.diplomes-date-recap{
+    display: flex;
+    margin: 5px;
+    border-radius: 30px;
+    border:1px solid var(--bleu);
+}
+
+.diplomes-date{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: var(--bleu);
+}
+
+.diplomes-recap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.diplomes-recap p{
+    width: 30%;
+    text-align: center;
+}
+
+#formateur-button, #formateur-button:hover, #formateur-button:active, #formateur-button:visited{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    line-height: 30px;
+    font-size: 100%;
+    width: 15%;
+    margin-left: 5%;
+    background-color: transparent;
+    border: 2px solid var(--bleu);
+    border-radius: 30px;
+    cursor:pointer;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.formateur{
+    display: none;
+    flex-direction: column;
+    width:100%;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.formateur-date-recap{
+    display: flex;
+    margin: 5px;
+    border-radius: 30px;
+    border:1px solid var(--bleu);
+}
+
+.formateur-date{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: var(--bleu);
+}
+
+.formateur-recap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.formateur-recap p{
+    width: 30%;
+    text-align: center;
+}
+
+#recherches-cliniques-button, #recherches-cliniques-button:hover, #recherches-cliniques-button:active, #recherches-cliniques-button:visited{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    line-height: 30px;
+    font-size: 100%;
+    width: 15%;
+    margin-left: 5%;
+    background-color: transparent;
+    border: 2px solid var(--bleu);
+    border-radius: 30px;
+    cursor:pointer;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.recherches-cliniques{
+    display: none;
+    flex-direction: column;
+    width:100%;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.recherches-cliniques-date-recap{
+    display: flex;
+    margin: 5px;
+    border-radius: 30px;
+    border:1px solid var(--bleu);
+}
+
+.recherches-cliniques-date{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: var(--bleu);
+}
+
+.recherches-cliniques-recap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.recherches-cliniques-recap p{
+    width: 30%;
+    text-align: center;
+}
+
+/* Pédicure */
+
+.presentation-pedicurie{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 30px;
+    border:3px solid var(--bleu);
+    padding: 20px;
+    width: -webkit-fill-available;
+}
+
+.pedicurie-text{
+    text-align: justify;
+    line-height: 20px;
+}
+
+/* Podologue */
+
+.presentation-podologie{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 30px;
+    border:3px solid var(--bleu);
+    padding: 20px;
+    width: -webkit-fill-available;
+}
+
+.podologie-text{
+    text-align: justify;
+    line-height: 20px;
+}
+
+/* Posturologue */
+
+.presentation-posturologie{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 30px;
+    border:3px solid var(--bleu);
+    padding: 20px;
+    width: -webkit-fill-available;
+}
+
+.posturologie-text{
+    text-align: justify;
+    line-height: 20px;
+}
+
+/* Enfants */
+
+.presentation-enfants{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 30px;
+    border:3px solid var(--bleu);
+    padding: 20px;
+    width: -webkit-fill-available;
+}
+
+.enfants-text{
+    text-align: justify;
+    line-height: 20px;
+}
+
+/* Troubles des apprentissages */
+
+.presentation-troubles-apprentissages{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 30px;
+    border:3px solid var(--bleu);
+    padding: 20px;
+    width: -webkit-fill-available;
+}
+
+.troubles-apprentissages-text{
+    text-align: justify;
+    line-height: 20px;
+}
+
+.troubles-apprentissages-questionnaire{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.troubles-apprentissages-questionnaire p{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.452);
+    border-radius: 30px;
+    line-height: 20px;
+}
+
+.troubles-apprentissages-questionnaire p:hover{
+    font-weight: bold;
+}
+
+/* Réflexes archaïques */
+
+.presentation-reflexes-archaiques{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 30px;
+    border:3px solid var(--bleu);
+    padding: 20px;
+    width: -webkit-fill-available;
+}
+
+.reflexes-archaiques-text{
+    text-align: justify;
+    line-height: 20px;
+}
+
+/* Sport*/
+
+.presentation-sport{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 30px;
+    border:3px solid var(--bleu);
+    padding: 20px;
+    width: -webkit-fill-available;
+}
+
+.sport-text{
+    text-align: justify;
+    line-height: 20px;
+}
+
+/* Cabinet */
+
+.presentation-cabinet{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 30px;
+    border:3px solid var(--bleu);
+    padding: 20px;
+    width: -webkit-fill-available;
+}
+
+.cabinet-photos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 30px;
+    justify-content: space-around;
+}
+
+.cabinet-photo{
+    width: 31%;
+    border-radius: 30px;
+    margin: 10px;
+    background-size: cover;
+    background-color: white;
+    border: 1px solid lightgrey;
+    box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.452);
+}
+
+.cabinet-photo:hover{
+    transform: scale(105%);
+}
+
+/* Etiosystem */
+
+.presentation-etiosystem{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 30px;
+    border:3px solid var(--bleu);
+    padding: 20px;
+    width: -webkit-fill-available;
+}
+
+.etiosystem-photo{
+    width: auto;
+    align-self: center;
+    background-color: white;
+    border: 1px solid lightgrey;
+    box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.452);
+    border-radius: 30px;
+    margin: 10px;
+    height: 300px;
+}
+
+.etiosystem-legende{
+    align-self: center;
+}
+
+.etiosystem-text{
+    text-align: justify;
+    line-height: 20px;
+}
+
+.etiosystem-video{
+    align-self: center;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.452);
+    border-radius: 30px;
+    margin: 10px;
+}
+
+/* Pied-page */
+
+.footer{
+    width: 100% !important;
+}
+
+.pied-page{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
+    background-color:var(--bleu);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+.pied-page h2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.pied-selection{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    flex: 2;
+}
+
+.pied-selection p:hover{
+    background-color:transparent;
+    border-color: transparent;
+}
+
+.google-map{
+    height: auto;
+    width: 70%;
+    box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.452);
+    border-radius: 30px;
+    margin: 20px;
+}
+
+.pied-coordonnées{
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 120%;
+}
