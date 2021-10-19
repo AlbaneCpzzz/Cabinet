@@ -1,0 +1,19 @@
+{
+  "name": "cabinet-sass",
+  "version": "1.0.0",
+  "description": "dossier-sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./Sass/Main.scss:./Css/Style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlbaneCpzzz/le-rispal.git"
+  },
+  "author": "Albane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlbaneCpzzz/le-rispal/issues"
+  },
+  "homepage": "https://github.com/AlbaneCpzzz/le-rispal#readme"
+}
