@@ -40,10 +40,44 @@
     margin: 10px;
 }
 
-@media screen and (max-width: 600px) {
-    
+@media screen and (min-width:1px) and (max-width: 450px) {
+    .etiosystem-photo{
+        width: 70%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .etiosystem-video{
+        width: 70%;
+        height: auto;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width:451px) and (max-width: 600px) {
+    .etiosystem-photo{
+        width: 70%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .etiosystem-video{
+        width: 70%;
+        height: auto;
+        border-radius: 10px;
+    }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1200px) {
-    
+    .etiosystem-photo{
+        width: 70%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .etiosystem-video{
+        width: 70%;
+        height: 215px;
+        border-radius: 10px;
+    }
 }
