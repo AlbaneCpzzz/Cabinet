@@ -51,8 +51,23 @@
     font-size: 120%;
 }
 
-@media screen and (max-width: 600px) {
-    
+@media screen and (min-width:1px) and (max-width: 450px) {
+    .pied-page{
+        height: auto;
+    }
+        
+    .pied-selection{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pied-coordonnées{
+        text-align-last: center;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:451px) and (max-width: 600px) {
     .pied-page{
         height: auto;
     }
