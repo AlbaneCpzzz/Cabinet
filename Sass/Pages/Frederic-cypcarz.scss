@@ -12,7 +12,7 @@
     width: -webkit-fill-available;
 }
 
-#diplomes-button, #diplomes-button:hover, #diplomes-button:active, #diplomes-button:visited{
+.CV-fred #diplomes-button, .CV-fred #diplomes-button:hover, .CV-fred #diplomes-button:active, .CV-fred #diplomes-button:visited{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +30,7 @@
     margin-bottom: 20px;
 }
 
-.diplomes{
+.CV-fred .diplomes{
     display: none;
     flex-direction: column;
     width:100%;
@@ -39,14 +39,14 @@
     margin-bottom: 20px;
 }
 
-.diplomes-date-recap{
+.CV-fred .diplomes-date-recap{
     display: flex;
     margin: 5px;
     border-radius: 30px;
     border:1px solid var(--bleu);
 }
 
-.diplomes-date{
+.CV-fred .diplomes-date{
     display: flex;
     width: 20%;
     justify-content: center;
@@ -56,7 +56,7 @@
     background-color: var(--bleu);
 }
 
-.diplomes-recap{
+.CV-fred .diplomes-recap{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -64,12 +64,12 @@
     width: 80%;
 }
 
-.diplomes-recap p{
+.CV-fred .diplomes-recap p{
     width: 30%;
     text-align: center;
 }
 
-#formateur-button, #formateur-button:hover, #formateur-button:active, #formateur-button:visited{
+.CV-fred #formateur-button, .CV-fred #formateur-button:hover, .CV-fred #formateur-button:active, .CV-fred #formateur-button:visited{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +87,7 @@
     margin-bottom: 20px;
 }
 
-.formateur{
+.CV-fred .formateur{
     display: none;
     flex-direction: column;
     width:100%;
@@ -96,14 +96,14 @@
     margin-bottom: 20px;
 }
 
-.formateur-date-recap{
+.CV-fred .formateur-date-recap{
     display: flex;
     margin: 5px;
     border-radius: 30px;
     border:1px solid var(--bleu);
 }
 
-.formateur-date{
+.CV-fred .formateur-date{
     display: flex;
     width: 20%;
     justify-content: center;
@@ -113,7 +113,7 @@
     background-color: var(--bleu);
 }
 
-.formateur-recap{
+.CV-fred .formateur-recap{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -121,12 +121,12 @@
     width: 80%;
 }
 
-.formateur-recap p{
+.CV-fred .formateur-recap p{
     width: 30%;
     text-align: center;
 }
 
-#recherches-cliniques-button, #recherches-cliniques-button:hover, #recherches-cliniques-button:active, #recherches-cliniques-button:visited{
+.CV-fred #recherches-cliniques-button, .CV-fred #recherches-cliniques-button:hover, .CV-fred #recherches-cliniques-button:active, .CV-fred #recherches-cliniques-button:visited{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,7 +144,7 @@
     margin-bottom: 20px;
 }
 
-.recherches-cliniques{
+.CV-fred .recherches-cliniques{
     display: none;
     flex-direction: column;
     width:100%;
@@ -153,14 +153,14 @@
     margin-bottom: 20px;
 }
 
-.recherches-cliniques-date-recap{
+.CV-fred .recherches-cliniques-date-recap{
     display: flex;
     margin: 5px;
     border-radius: 30px;
     border:1px solid var(--bleu);
 }
 
-.recherches-cliniques-date{
+.CV-fred .recherches-cliniques-date{
     display: flex;
     width: 20%;
     justify-content: center;
@@ -170,7 +170,7 @@
     background-color: var(--bleu);
 }
 
-.recherches-cliniques-recap{
+.CV-fred .recherches-cliniques-recap{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -178,15 +178,214 @@
     width: 80%;
 }
 
-.recherches-cliniques-recap p{
+.CV-fred .recherches-cliniques-recap p{
     width: 30%;
     text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width:1px) and (max-width: 450px) {
+    .CV-fred{
+        height: auto;
+    }
+
+    .CV-fred #diplomes-button, .CV-fred #diplomes-button:hover, .CV-fred #diplomes-button:active, .CV-fred #diplomes-button:visited{
+        width: 100px;
+    }
     
+    .CV-fred .diplomes-date{
+        width: 35%;
+    }
+    
+    .CV-fred .diplomes-recap{
+        display: flex;
+        flex-direction: column;
+        white-space: normal;
+        width: 75%;
+        align-items: flex-start;
+    }
+    
+    .CV-fred .diplomes-recap p{
+        white-space: normal;
+        width: 90%;
+    }
+    
+    .CV-fred #formateur-button, .CV-fred #formateur-button:hover, .CV-fred #formateur-button:active, .CV-fred #formateur-button:visited{
+        width: 100px;
+    }
+    
+    .CV-fred .formateur-date{
+        width: 35%;
+    }
+    
+    .CV-fred .formateur-recap{
+        display: flex;
+        flex-direction: column;
+        white-space: normal;
+        width: 75%;
+        align-items: flex-start;
+    }
+    
+    .CV-fred .formateur-recap p{
+        white-space: normal;
+        width: 90%;
+    }
+    
+    .CV-fred #recherches-cliniques-button, .CV-fred #recherches-cliniques-button:hover, .CV-fred #recherches-cliniques-button:active, .CV-fred #recherches-cliniques-button:visited{
+        width: 100px;
+    }
+    
+    .CV-fred .recherches-cliniques-date{
+        width: 35%;
+    }
+    
+    .CV-fred .recherches-cliniques-recap{
+        display: flex;
+        flex-direction: column;
+        white-space: normal;
+        width: 75%;
+        align-items: flex-start;
+    }
+    
+    .CV-fred .recherches-cliniques-recap p{
+        white-space: normal;
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:451px) and (max-width: 600px) {
+    .CV-fred{
+        height: auto;
+    }
+
+    .CV-fred #diplomes-button, .CV-fred #diplomes-button:hover, .CV-fred #diplomes-button:active, .CV-fred #diplomes-button:visited{
+        width: 100px;
+    }
+    
+    .CV-fred .diplomes-date{
+        width: 35%;
+    }
+    
+    .CV-fred .diplomes-recap{
+        display: flex;
+        flex-direction: column;
+        white-space: normal;
+        width: 75%;
+        align-items: flex-start;
+    }
+    
+    .CV-fred .diplomes-recap p{
+        white-space: normal;
+        width: 90%;
+    }
+    
+    .CV-fred #formateur-button, .CV-fred #formateur-button:hover, .CV-fred #formateur-button:active, .CV-fred #formateur-button:visited{
+        width: 100px;
+    }
+    
+    .CV-fred .formateur-date{
+        width: 35%;
+    }
+    
+    .CV-fred .formateur-recap{
+        display: flex;
+        flex-direction: column;
+        white-space: normal;
+        width: 75%;
+        align-items: flex-start;
+    }
+    
+    .CV-fred .formateur-recap p{
+        white-space: normal;
+        width: 90%;
+    }
+    
+    .CV-fred #recherches-cliniques-button, .CV-fred #recherches-cliniques-button:hover, .CV-fred #recherches-cliniques-button:active, .CV-fred #recherches-cliniques-button:visited{
+        width: 100px;
+    }
+    
+    .CV-fred .recherches-cliniques-date{
+        width: 35%;
+    }
+    
+    .CV-fred .recherches-cliniques-recap{
+        display: flex;
+        flex-direction: column;
+        white-space: normal;
+        width: 75%;
+        align-items: flex-start;
+    }
+    
+    .CV-fred .recherches-cliniques-recap p{
+        white-space: normal;
+        width: 90%;
+    }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1200px) {
+    .CV-fred{
+        height: auto;
+    }
+
+    .CV-fred #diplomes-button, .CV-fred #diplomes-button:hover, .CV-fred #diplomes-button:active, .CV-fred #diplomes-button:visited{
+        width: 100px;
+    }
     
+    .CV-fred .diplomes-date{
+        width: 35%;
+    }
+    
+    .CV-fred .diplomes-recap{
+        display: flex;
+        flex-direction: column;
+        white-space: normal;
+        width: 75%;
+        align-items: flex-start;
+    }
+    
+    .CV-fred .diplomes-recap p{
+        white-space: normal;
+        width: 90%;
+    }
+    
+    .CV-fred #formateur-button, .CV-fred #formateur-button:hover, .CV-fred #formateur-button:active, .CV-fred #formateur-button:visited{
+        width: 100px;
+    }
+    
+    .CV-fred .formateur-date{
+        width: 35%;
+    }
+    
+    .CV-fred .formateur-recap{
+        display: flex;
+        flex-direction: column;
+        white-space: normal;
+        width: 75%;
+        align-items: flex-start;
+    }
+    
+    .CV-fred .formateur-recap p{
+        white-space: normal;
+        width: 90%;
+    }
+    
+    .CV-fred #recherches-cliniques-button, .CV-fred #recherches-cliniques-button:hover, .CV-fred #recherches-cliniques-button:active, .CV-fred #recherches-cliniques-button:visited{
+        width: 100px;
+    }
+    
+    .CV-fred .recherches-cliniques-date{
+        width: 35%;
+    }
+    
+    .CV-fred .recherches-cliniques-recap{
+        display: flex;
+        flex-direction: column;
+        white-space: normal;
+        width: 75%;
+        align-items: flex-start;
+    }
+    
+    .CV-fred .recherches-cliniques-recap p{
+        white-space: normal;
+        width: 90%;
+    }
 }
