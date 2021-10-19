@@ -1,0 +1,40 @@
+.presentation-troubles-apprentissages{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 30px;
+    border:3px solid var(--bleu);
+    padding: 20px;
+    width: -webkit-fill-available;
+}
+
+.troubles-apprentissages-text{
+    text-align: justify;
+    line-height: 20px;
+}
+
+.troubles-apprentissages-questionnaire{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.troubles-apprentissages-questionnaire p{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.452);
+    border-radius: 30px;
+    line-height: 20px;
+}
+
+.troubles-apprentissages-questionnaire p:hover{
+    font-weight: bold;
+}
