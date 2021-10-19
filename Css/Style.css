@@ -133,6 +133,26 @@
   .navigation li a p {
     text-align: center;
   }
+
+  .nav-deroulant:hover .nav-sous {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+    font-size: 75%;
+    white-space: nowrap;
+    width: 25%;
+  }
+
+  .nav-deroulant .nav-sous li p {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .nav-deroulant:hover .nav-sous {
+    width: 20%;
+    padding-left: 10px;
+  }
 }
 .footer {
   width: 100% !important;
@@ -200,6 +220,12 @@
   .pied-coordonnées {
     text-align-last: center;
     margin: 0;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .pied-coordonnées {
+    margin-left: 10px;
+    margin-top: 50px;
   }
 }
 .sommaire {
