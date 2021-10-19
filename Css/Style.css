@@ -12,13 +12,30 @@
   margin: 20px;
 }
 
-@media screen and (max-width: 600px) {
-  .html, body {
+@media screen and (min-width: 1px) and (max-width: 450px) {
+  h1, h2, h3 {
+    font-size: x-small;
+  }
+
+  p {
+    font-size: xx-small;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 600px) {
+  h1, h2, h3 {
+    font-size: small;
+  }
+
+  p {
     font-size: x-small;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1200px) {
-  .html, body {
+  h1, h2, h3 {
+    font-size: medium;
+  }
+
+  p {
     font-size: small;
   }
 }
@@ -115,9 +132,13 @@
     height: auto;
   }
 
+  .logo-entete {
+    width: 50px;
+  }
+
   .nom-cabinet {
     width: auto;
-    padding-left: 40px;
+    padding-left: 20px;
   }
 
   .navigation {
@@ -139,13 +160,13 @@
     margin: 0;
     padding: 0;
     border-radius: 15px;
-    font-size: 75%;
     white-space: nowrap;
-    width: 25%;
+    width: fit-content;
   }
 
   .nav-deroulant .nav-sous li p {
     text-align: center;
+    font-size: 50%;
   }
 }
 @media screen and (min-width: 451px) and (max-width: 600px) {
@@ -153,6 +174,12 @@
     height: auto;
   }
 
+  .logo-entete {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .nom-cabinet {
     width: auto;
     padding-left: 40px;
@@ -179,7 +206,7 @@
     border-radius: 15px;
     font-size: 75%;
     white-space: nowrap;
-    width: 25%;
+    width: fit-content;
   }
 
   .nav-deroulant .nav-sous li p {
@@ -187,6 +214,12 @@
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1200px) {
+  .logo-entete {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .nav-deroulant:hover .nav-sous {
     width: 20%;
     padding-left: 10px;
@@ -649,6 +682,45 @@
   margin: 10px;
 }
 
+@media screen and (min-width: 1px) and (max-width: 450px) {
+  .etiosystem-photo {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .etiosystem-video {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 600px) {
+  .etiosystem-photo {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .etiosystem-video {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .etiosystem-photo {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .etiosystem-video {
+    width: 70%;
+    height: 215px;
+    border-radius: 10px;
+  }
+}
 .CV-fred {
   display: flex;
   flex-direction: column;
@@ -663,7 +735,7 @@
   width: -webkit-fill-available;
 }
 
-#diplomes-button, #diplomes-button:hover, #diplomes-button:active, #diplomes-button:visited {
+.CV-fred #diplomes-button, .CV-fred #diplomes-button:hover, .CV-fred #diplomes-button:active, .CV-fred #diplomes-button:visited {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -681,7 +753,7 @@
   margin-bottom: 20px;
 }
 
-.diplomes {
+.CV-fred .diplomes {
   display: none;
   flex-direction: column;
   width: 100%;
@@ -690,14 +762,14 @@
   margin-bottom: 20px;
 }
 
-.diplomes-date-recap {
+.CV-fred .diplomes-date-recap {
   display: flex;
   margin: 5px;
   border-radius: 30px;
   border: 1px solid var(--bleu);
 }
 
-.diplomes-date {
+.CV-fred .diplomes-date {
   display: flex;
   width: 20%;
   justify-content: center;
@@ -707,7 +779,7 @@
   background-color: var(--bleu);
 }
 
-.diplomes-recap {
+.CV-fred .diplomes-recap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -715,12 +787,12 @@
   width: 80%;
 }
 
-.diplomes-recap p {
+.CV-fred .diplomes-recap p {
   width: 30%;
   text-align: center;
 }
 
-#formateur-button, #formateur-button:hover, #formateur-button:active, #formateur-button:visited {
+.CV-fred #formateur-button, .CV-fred #formateur-button:hover, .CV-fred #formateur-button:active, .CV-fred #formateur-button:visited {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -738,7 +810,7 @@
   margin-bottom: 20px;
 }
 
-.formateur {
+.CV-fred .formateur {
   display: none;
   flex-direction: column;
   width: 100%;
@@ -747,14 +819,14 @@
   margin-bottom: 20px;
 }
 
-.formateur-date-recap {
+.CV-fred .formateur-date-recap {
   display: flex;
   margin: 5px;
   border-radius: 30px;
   border: 1px solid var(--bleu);
 }
 
-.formateur-date {
+.CV-fred .formateur-date {
   display: flex;
   width: 20%;
   justify-content: center;
@@ -764,7 +836,7 @@
   background-color: var(--bleu);
 }
 
-.formateur-recap {
+.CV-fred .formateur-recap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -772,12 +844,12 @@
   width: 80%;
 }
 
-.formateur-recap p {
+.CV-fred .formateur-recap p {
   width: 30%;
   text-align: center;
 }
 
-#recherches-cliniques-button, #recherches-cliniques-button:hover, #recherches-cliniques-button:active, #recherches-cliniques-button:visited {
+.CV-fred #recherches-cliniques-button, .CV-fred #recherches-cliniques-button:hover, .CV-fred #recherches-cliniques-button:active, .CV-fred #recherches-cliniques-button:visited {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -795,7 +867,7 @@
   margin-bottom: 20px;
 }
 
-.recherches-cliniques {
+.CV-fred .recherches-cliniques {
   display: none;
   flex-direction: column;
   width: 100%;
@@ -804,14 +876,14 @@
   margin-bottom: 20px;
 }
 
-.recherches-cliniques-date-recap {
+.CV-fred .recherches-cliniques-date-recap {
   display: flex;
   margin: 5px;
   border-radius: 30px;
   border: 1px solid var(--bleu);
 }
 
-.recherches-cliniques-date {
+.CV-fred .recherches-cliniques-date {
   display: flex;
   width: 20%;
   justify-content: center;
@@ -821,7 +893,7 @@
   background-color: var(--bleu);
 }
 
-.recherches-cliniques-recap {
+.CV-fred .recherches-cliniques-recap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -829,11 +901,215 @@
   width: 80%;
 }
 
-.recherches-cliniques-recap p {
+.CV-fred .recherches-cliniques-recap p {
   width: 30%;
   text-align: center;
 }
 
+@media screen and (min-width: 1px) and (max-width: 450px) {
+  .CV-fred {
+    height: auto;
+  }
+
+  .CV-fred #diplomes-button, .CV-fred #diplomes-button:hover, .CV-fred #diplomes-button:active, .CV-fred #diplomes-button:visited {
+    width: 100px;
+  }
+
+  .CV-fred .diplomes-date {
+    width: 35%;
+  }
+
+  .CV-fred .diplomes-recap {
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    width: 75%;
+    align-items: flex-start;
+  }
+
+  .CV-fred .diplomes-recap p {
+    white-space: normal;
+    width: 90%;
+  }
+
+  .CV-fred #formateur-button, .CV-fred #formateur-button:hover, .CV-fred #formateur-button:active, .CV-fred #formateur-button:visited {
+    width: 100px;
+  }
+
+  .CV-fred .formateur-date {
+    width: 35%;
+  }
+
+  .CV-fred .formateur-recap {
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    width: 75%;
+    align-items: flex-start;
+  }
+
+  .CV-fred .formateur-recap p {
+    white-space: normal;
+    width: 90%;
+  }
+
+  .CV-fred #recherches-cliniques-button, .CV-fred #recherches-cliniques-button:hover, .CV-fred #recherches-cliniques-button:active, .CV-fred #recherches-cliniques-button:visited {
+    width: 100px;
+  }
+
+  .CV-fred .recherches-cliniques-date {
+    width: 35%;
+  }
+
+  .CV-fred .recherches-cliniques-recap {
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    width: 75%;
+    align-items: flex-start;
+  }
+
+  .CV-fred .recherches-cliniques-recap p {
+    white-space: normal;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 600px) {
+  .CV-fred {
+    height: auto;
+  }
+
+  .CV-fred #diplomes-button, .CV-fred #diplomes-button:hover, .CV-fred #diplomes-button:active, .CV-fred #diplomes-button:visited {
+    width: 100px;
+  }
+
+  .CV-fred .diplomes-date {
+    width: 35%;
+  }
+
+  .CV-fred .diplomes-recap {
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    width: 75%;
+    align-items: flex-start;
+  }
+
+  .CV-fred .diplomes-recap p {
+    white-space: normal;
+    width: 90%;
+  }
+
+  .CV-fred #formateur-button, .CV-fred #formateur-button:hover, .CV-fred #formateur-button:active, .CV-fred #formateur-button:visited {
+    width: 100px;
+  }
+
+  .CV-fred .formateur-date {
+    width: 35%;
+  }
+
+  .CV-fred .formateur-recap {
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    width: 75%;
+    align-items: flex-start;
+  }
+
+  .CV-fred .formateur-recap p {
+    white-space: normal;
+    width: 90%;
+  }
+
+  .CV-fred #recherches-cliniques-button, .CV-fred #recherches-cliniques-button:hover, .CV-fred #recherches-cliniques-button:active, .CV-fred #recherches-cliniques-button:visited {
+    width: 100px;
+  }
+
+  .CV-fred .recherches-cliniques-date {
+    width: 35%;
+  }
+
+  .CV-fred .recherches-cliniques-recap {
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    width: 75%;
+    align-items: flex-start;
+  }
+
+  .CV-fred .recherches-cliniques-recap p {
+    white-space: normal;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .CV-fred {
+    height: auto;
+  }
+
+  .CV-fred #diplomes-button, .CV-fred #diplomes-button:hover, .CV-fred #diplomes-button:active, .CV-fred #diplomes-button:visited {
+    width: 100px;
+  }
+
+  .CV-fred .diplomes-date {
+    width: 35%;
+  }
+
+  .CV-fred .diplomes-recap {
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    width: 75%;
+    align-items: flex-start;
+  }
+
+  .CV-fred .diplomes-recap p {
+    white-space: normal;
+    width: 90%;
+  }
+
+  .CV-fred #formateur-button, .CV-fred #formateur-button:hover, .CV-fred #formateur-button:active, .CV-fred #formateur-button:visited {
+    width: 100px;
+  }
+
+  .CV-fred .formateur-date {
+    width: 35%;
+  }
+
+  .CV-fred .formateur-recap {
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    width: 75%;
+    align-items: flex-start;
+  }
+
+  .CV-fred .formateur-recap p {
+    white-space: normal;
+    width: 90%;
+  }
+
+  .CV-fred #recherches-cliniques-button, .CV-fred #recherches-cliniques-button:hover, .CV-fred #recherches-cliniques-button:active, .CV-fred #recherches-cliniques-button:visited {
+    width: 100px;
+  }
+
+  .CV-fred .recherches-cliniques-date {
+    width: 35%;
+  }
+
+  .CV-fred .recherches-cliniques-recap {
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    width: 75%;
+    align-items: flex-start;
+  }
+
+  .CV-fred .recherches-cliniques-recap p {
+    white-space: normal;
+    width: 90%;
+  }
+}
 .CV-nath {
   display: flex;
   flex-direction: column;
@@ -848,7 +1124,7 @@
   width: -webkit-fill-available;
 }
 
-#diplomes-button, #diplomes-button:hover, #diplomes-button:active, #diplomes-button:visited {
+.CV-nath #diplomes-button, .CV-nath #diplomes-button:hover, .CV-nath #diplomes-button:active, .CV-nath #diplomes-button:visited {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -866,7 +1142,7 @@
   margin-bottom: 20px;
 }
 
-.diplomes {
+.CV-nath .diplomes {
   display: none;
   flex-direction: column;
   width: 100%;
@@ -875,14 +1151,14 @@
   margin-bottom: 20px;
 }
 
-.diplomes-date-recap {
+.CV-nath .diplomes-date-recap {
   display: flex;
   margin: 5px;
   border-radius: 30px;
   border: 1px solid var(--bleu);
 }
 
-.diplomes-date {
+.CV-nath .diplomes-date {
   display: flex;
   width: 20%;
   justify-content: center;
@@ -892,7 +1168,7 @@
   background-color: var(--bleu);
 }
 
-.diplomes-recap {
+.CV-nath .diplomes-recap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -900,125 +1176,89 @@
   width: 80%;
 }
 
-.diplomes-recap p {
+.CV-nath .diplomes-recap p {
   width: 30%;
   text-align: center;
 }
 
-#formateur-button, #formateur-button:hover, #formateur-button:active, #formateur-button:visited {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  line-height: 30px;
-  font-size: 100%;
-  width: 15%;
-  margin-left: 5%;
-  background-color: transparent;
-  border: 2px solid var(--bleu);
-  border-radius: 30px;
-  cursor: pointer;
-  text-decoration: none;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+@media screen and (min-width: 1px) and (max-width: 450px) {
+  .CV-nath {
+    height: auto;
+  }
 
-.formateur {
-  display: none;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+  .CV-nath #diplomes-button, .CV-nath #diplomes-button:hover, .CV-nath #diplomes-button:active, .CV-nath #diplomes-button:visited {
+    width: 100px;
+  }
 
-.formateur-date-recap {
-  display: flex;
-  margin: 5px;
-  border-radius: 30px;
-  border: 1px solid var(--bleu);
-}
+  .CV-nath .diplomes-date {
+    width: 35%;
+  }
 
-.formateur-date {
-  display: flex;
-  width: 20%;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  border-radius: 30px;
-  background-color: var(--bleu);
-}
+  .CV-nath .diplomes-recap {
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    width: 75%;
+    align-items: flex-start;
+  }
 
-.formateur-recap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  width: 80%;
+  .CV-nath .diplomes-recap p {
+    white-space: normal;
+    width: 90%;
+  }
 }
+@media screen and (min-width: 451px) and (max-width: 600px) {
+  .CV-nath {
+    height: auto;
+  }
 
-.formateur-recap p {
-  width: 30%;
-  text-align: center;
+  .CV-nath #diplomes-button, .CV-nath #diplomes-button:hover, .CV-nath #diplomes-button:active, .CV-nath #diplomes-button:visited {
+    width: 100px;
+  }
+
+  .CV-nath .diplomes-date {
+    width: 35%;
+  }
+
+  .CV-nath .diplomes-recap {
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    width: 75%;
+    align-items: flex-start;
+  }
+
+  .CV-nath .diplomes-recap p {
+    white-space: normal;
+    width: 90%;
+  }
 }
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .CV-nath {
+    height: auto;
+  }
 
-#recherches-cliniques-button, #recherches-cliniques-button:hover, #recherches-cliniques-button:active, #recherches-cliniques-button:visited {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  line-height: 30px;
-  font-size: 100%;
-  width: 15%;
-  margin-left: 5%;
-  background-color: transparent;
-  border: 2px solid var(--bleu);
-  border-radius: 30px;
-  cursor: pointer;
-  text-decoration: none;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  .CV-nath #diplomes-button, .CV-nath #diplomes-button:hover, .CV-nath #diplomes-button:active, .CV-nath #diplomes-button:visited {
+    width: 100px;
+  }
+
+  .CV-nath .diplomes-date {
+    width: 35%;
+  }
+
+  .CV-nath .diplomes-recap {
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    width: 75%;
+    align-items: flex-start;
+  }
+
+  .CV-nath .diplomes-recap p {
+    white-space: normal;
+    width: 90%;
+  }
 }
-
-.recherches-cliniques {
-  display: none;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.recherches-cliniques-date-recap {
-  display: flex;
-  margin: 5px;
-  border-radius: 30px;
-  border: 1px solid var(--bleu);
-}
-
-.recherches-cliniques-date {
-  display: flex;
-  width: 20%;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  border-radius: 30px;
-  background-color: var(--bleu);
-}
-
-.recherches-cliniques-recap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  width: 80%;
-}
-
-.recherches-cliniques-recap p {
-  width: 30%;
-  text-align: center;
-}
-
 .presentation-pedicurie {
   display: flex;
   flex-direction: column;
@@ -1148,11 +1388,34 @@
   border: 1px solid lightgrey;
   box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.452);
   border-radius: 30px;
-  line-height: 20px;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }
 
 .troubles-apprentissages-questionnaire p:hover {
   font-weight: bold;
+}
+
+@media screen and (min-width: 1px) and (max-width: 450px) {
+  .troubles-apprentissages-questionnaire p {
+    width: 100%;
+    height: 20px;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 600px) {
+  .troubles-apprentissages-questionnaire p {
+    width: 35%;
+    height: 30px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .troubles-apprentissages-questionnaire p {
+    width: 35%;
+    height: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
