@@ -86,8 +86,7 @@
     color: black;
 }
 
-@media screen and (max-width: 600px) {
-    
+@media screen and (min-width:1px) and (max-width: 450px) {
     .logo-coordonnees{
         height: auto;
     }
@@ -124,15 +123,50 @@
     .nav-deroulant .nav-sous li p{
         text-align: center;
     }
+}
 
+@media screen and (min-width:451px) and (max-width: 600px) {
+    .logo-coordonnees{
+        height: auto;
+    }
+    
+    .nom-cabinet{
+        width: auto;
+        padding-left: 40px;
+    }
+
+    .navigation{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        max-height: fit-content;
+    }
+    
+    .navigation li{
+        width: 30%;
+    }
+
+    .navigation li a p{
+        text-align: center; 
+    }
+
+    .nav-deroulant:hover .nav-sous{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        border-radius: 15px;
+        font-size: 75%;
+        white-space: nowrap;
+        width: 25%;
+    }
+
+    .nav-deroulant .nav-sous li p{
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1200px) {
-
     .nav-deroulant:hover .nav-sous{
         width: 20%;
         padding-left: 10px;
     }
-    
-
 }
