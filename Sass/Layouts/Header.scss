@@ -90,10 +90,14 @@
     .logo-coordonnees{
         height: auto;
     }
+
+    .logo-entete{
+        width: 50px;
+    }
     
     .nom-cabinet{
         width: auto;
-        padding-left: 40px;
+        padding-left: 20px;
     }
 
     .navigation{
@@ -115,13 +119,13 @@
         margin: 0;
         padding: 0;
         border-radius: 15px;
-        font-size: 75%;
         white-space: nowrap;
-        width: 25%;
+        width: fit-content;
     }
 
     .nav-deroulant .nav-sous li p{
         text-align: center;
+        font-size: 50%;
     }
 }
 
@@ -129,6 +133,12 @@
     .logo-coordonnees{
         height: auto;
     }
+
+    .logo-entete{
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+    }
     
     .nom-cabinet{
         width: auto;
@@ -156,7 +166,7 @@
         border-radius: 15px;
         font-size: 75%;
         white-space: nowrap;
-        width: 25%;
+        width: fit-content;
     }
 
     .nav-deroulant .nav-sous li p{
@@ -165,6 +175,12 @@
 }
 
 @media screen and (min-width: 601px) and (max-width: 1200px) {
+    .logo-entete{
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+    }
+
     .nav-deroulant:hover .nav-sous{
         width: 20%;
         padding-left: 10px;
