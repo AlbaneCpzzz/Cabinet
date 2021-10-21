@@ -41,6 +41,10 @@
 }
 
 @media screen and (min-width:1px) and (max-width: 450px) {
+    .presentation-etiosystem{
+        height: auto;
+    }
+    
     .etiosystem-photo{
         width: 70%;
         height: auto;
@@ -55,6 +59,10 @@
 }
 
 @media screen and (min-width:451px) and (max-width: 600px) {
+    .presentation-etiosystem{
+        height: auto;
+    }
+
     .etiosystem-photo{
         width: 70%;
         height: auto;
@@ -69,6 +77,10 @@
 }
 
 @media screen and (min-width: 601px) and (max-width: 1200px) {
+    .presentation-etiosystem{
+        height: auto;
+    }
+    
     .etiosystem-photo{
         width: 70%;
         height: auto;
